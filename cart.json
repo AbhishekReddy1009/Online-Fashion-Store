@@ -1,0 +1,27 @@
+{
+    "Products":[
+      {
+        "id": 1,
+        "image": "images/m1.webp",
+        "name": "Product name 1",
+        "category": "Category 1",
+        "price": "$11.99"
+      },
+      {
+        "id": 2,
+        "image": "images/m2.webp",
+        "name": "Product name 2",
+        "category": "Category 2",
+        "price": "$61.99"
+      },
+      {
+        "id": 6,
+        "image": "images/m6.webp",
+        "name": "Product name 6",
+        "category": "Category 6",
+        "price": "$39.99"
+      }
+    ]
+  }
+  
+  

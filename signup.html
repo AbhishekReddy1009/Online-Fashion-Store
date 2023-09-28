@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+      .back {
+        background: #e2e2e2;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      .div-center {
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+        padding: 1em 2em;
+        border-bottom: 2px solid #ccc;
+        display: table;
+      }
+
+      div.content {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    </style>>
+</head>
+<body>
+    
+      <div class="back">
+
+
+  <div class="div-center">
+
+
+    <div class="content">
+
+      <h3 style="text-align: center;">FashionStore</h3>
+      <h4>Create new account</h4>
+      <hr />
+      <form action="main.html">
+        <div class="form-group">
+          <label for="First Name">First Name:</label>
+          <input type="text" class="form-control" id="First_Name">
+        </div>
+        <div class="form-group">
+          <label for="Last Name">Last Name:</label>
+          <input type="text" class="form-control" id="Last_Name">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input type="email" class="form-control" id="Email">
+        </div>
+        <div class="form-group">
+          <label for="Password">Password:</label>
+          <input type="password" class="form-control" id="Password1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="Verify_Password">Re-enter Password:</label>
+          <input type="password" class="form-control" id="confirmPassword1">
+        </div>
+        <br>
+        <button type="submit" id="create_accnt" onsubmit="main.html" class="btn btn-primary" formaction="#">Create Account</button>
+
+      </form>
+    </div>
+    </span>
+  </div>
+  <script>
+
+const form = document.querySelector('form');
+const firstNameInput = document.querySelector('#First_Name');
+const lastNameInput = document.querySelector('#Last_Name');
+const emailInput = document.querySelector('#Email');
+const passwordInput = document.querySelector('#Password1');
+const confirmPasswordInput = document.querySelector('#confirmPassword1');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); 
+  
+  const firstName = firstNameInput.value.trim();
+  const lastName = lastNameInput.value.trim();
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
+  const confirmPassword = confirmPasswordInput.value.trim();
+
+  const emailRegex = /^\S+@\S+\.\S+$/;
+
+  if (firstName === '' || lastName === '' || email === '' || password === '' || confirmPassword === '') {
+    alert('Please fill in all the fields.');
+    return false;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    emailInput.focus();
+    return false;
+  }
+
+  if (password.length < 8) {
+    alert('Your password must be at least 8 characters long.');
+    passwordInput.focus();
+    return false;
+  }
+
+  if (password !== confirmPassword) {
+    alert('Your passwords do not match.');
+    confirmPasswordInput.focus();
+    return false;
+  }
+  form.submit();
+});
+
+  </script>
+</body>
+</html>

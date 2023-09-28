@@ -1,0 +1,45 @@
+ .container {
+    max-width: 960px;
+  }
+  .site-header {
+    background-color: rgba(139, 127, 127, 0.312);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8a2b2b;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .box-shadow-zoom:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  } 
+  .c .card-body {
+    padding: 20px;
+    background-color: aqua;
+    height: 150px;
+    
+  }
+  
+
+  #card-container {
+    background-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  body{
+    background-color: #ffffff;
+  }
+
+  .btn{
+    display: inline-block;
+    background-color: rgb(220,217,217);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  

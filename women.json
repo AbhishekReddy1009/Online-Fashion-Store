@@ -1,0 +1,55 @@
+{
+    "WomenProducts":[
+        {
+            "id": 10,
+            "image": "images/w1.webp",
+            "name": "Product name 1",
+            "category": "Category 1",
+            "price": "$12.79",
+            "gender":"female"
+          },
+          
+          {
+            "id": 11,
+            "image": "images/w2.webp",
+            "name": "Product name 2",
+            "category": "Category 2",
+            "price": "$61.99",
+            "gender":"female"
+          },
+        
+          {
+            "id": 12,
+            "image": "images/w3.webp",
+            "name": "Product name 3",
+            "category": "Category 3",
+            "price": "$61.99",
+            "gender":"female"
+          },
+          {
+            "id": 13,
+            "image": "images/w4.webp",
+            "name": "Product name 4",
+            "category": "Category 4",
+            "price": "$99.99",
+            "gender":"female"
+          },
+          {
+            "id": 14,
+            "image": "images/w5.webp",
+            "name": "Product name 5",
+            "category": "Category 5",
+            "price": "$68.99",
+            "gender":"female"
+          },
+          
+          {
+            "id": 15,
+            "image": "images/w6.webp",
+            "name": "Product name 6",
+            "category": "Category 6",
+            "price": "$39.99",
+            "gender":"female"
+          }
+    ]
+}
